@@ -1,0 +1,352 @@
+{
+  "role_id": "role_784a9663fc2a",
+  "jd_hash": "784a9663fc2a35c204df3eaa0e8a2b5d912e482451178b36738b47f90f62ad04",
+  "resume_hash": "39bcf7cb4ce8465c1473aac72e2f7e508204ab72f291aadb972965098280b8e0",
+  "requirements_version": "1.0.0",
+  "prompt_version": "MATCH_EVIDENCE_V2",
+  "model_id": "llama-3.1-8b-instant",
+  "run_id": "b7f4d3e7",
+  "matches": [
+    {
+      "requirement_id": "REQ-001",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Python, JavaScript (ES6+), TypeScript, HTML, CSS/Sass",
+          "resume_section": "Core Skills",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "requirement_id": "REQ-002",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Python, JavaScript (ES6+), TypeScript, HTML, CSS/Sass",
+          "resume_section": "Core Skills",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "requirement_id": "REQ-003",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Frameworks & Platforms: React, React Native, Next.js, Node.js, Express, Flask, FastAPI",
+          "resume_section": "Core Skills",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "requirement_id": "REQ-004",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Frameworks & Platforms: React, React Native, Next.js, Node.js, Express, Flask, FastAPI",
+          "resume_section": "Core Skills",
+          "start_offset": 0,
+          "end_offset": 0
+        },
+        {
+          "quote": "Designed and built a custom CRM platform to replace a rigid third-party system and support end-to-end operations for a healthcare services organization, with strong emphasis on data separation, security, and operational workflows.",
+          "resume_section": "Sokana Collective",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "requirement_id": "REQ-005",
+      "requirement_key": "",
+      "matched": false,
+      "evidence": [],
+      "notes": ""
+    },
+    {
+      "requirement_id": "REQ-006",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Frameworks & Platforms: React, React Native, Next.js, Node.js, Express, Flask, FastAPI",
+          "resume_section": "Core Skills",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "requirement_id": "REQ-007",
+      "requirement_key": "",
+      "matched": false,
+      "evidence": [],
+      "notes": ""
+    },
+    {
+      "requirement_id": "REQ-008",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Cloud & DevOps: Render, Vercel, Google Cloud SQL, Cloud Functions, CI/CD pipelines, environment-based configuration",
+          "resume_section": "Core Skills",
+          "start_offset": 0,
+          "end_offset": 0
+        },
+        {
+          "quote": "Architected a split-database system separating sensitive (PHI) and non-sensitive data using Supabase and Google Cloud SQL (PostgreSQL)",
+          "resume_section": "Sokana Collective",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "requirement_id": "REQ-009",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Infrastructure: AWS (Fargate, ECS, S3, and more)",
+          "resume_section": "Core Skills",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "requirement_id": "REQ-010",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Infrastructure: AWS (Fargate, ECS, S3, and more)",
+          "resume_section": "Core Skills",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "requirement_id": "REQ-011",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Infrastructure: AWS (Fargate, ECS, S3, and more)",
+          "resume_section": "Core Skills",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "requirement_id": "REQ-012",
+      "requirement_key": "",
+      "matched": false,
+      "evidence": [],
+      "notes": ""
+    },
+    {
+      "requirement_id": "REQ-013",
+      "requirement_key": "",
+      "matched": false,
+      "evidence": [],
+      "notes": ""
+    },
+    {
+      "requirement_id": "REQ-014",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Monitoring: Datadog, PagerDuty, Sentry",
+          "resume_section": "Core Skills",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "requirement_id": "REQ-015",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Monitoring: Datadog, PagerDuty, Sentry",
+          "resume_section": "Core Skills",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "requirement_id": "REQ-016",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Monitoring: Datadog, PagerDuty, Sentry",
+          "resume_section": "Core Skills",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "requirement_id": "REQ-017",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "LinkedIn | GitHub | Portfolio",
+          "resume_section": "Contact Information",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "requirement_id": "REQ-018",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Applied AI / LLM Systems: LLM-assisted structured extraction and classification, Prompt design with strict JSON schema enforcement, OCR \u2192 normalization \u2192 enrichment pipelines, Fallback logic, retries, confidence thresholds, Cost-predictable inference and caching strategies",
+          "resume_section": "Core Skills",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "requirement_id": "REQ-019",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "real world experience building AI powered features using LLMs or applied machine learning",
+          "resume_section": "Core Skills",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "requirement_id": "REQ-020",
+      "requirement_key": "",
+      "matched": false,
+      "evidence": [],
+      "notes": ""
+    },
+    {
+      "requirement_id": "REQ-021",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "partnering with product managers, designers, clinicians, and legal or compliance partners",
+          "resume_section": "Core Skills",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "requirement_id": "REQ-022",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "partnering with product managers, designers, clinicians, and legal or compliance partners",
+          "resume_section": "Core Skills",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "requirement_id": "REQ-023",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "partnering with product managers, designers, clinicians, and legal or compliance partners",
+          "resume_section": "Core Skills",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "requirement_id": "REQ-024",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "partnering with product managers, designers, clinicians, and legal or compliance partners",
+          "resume_section": "Core Skills",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "requirement_id": "REQ-025",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "hands on technical leadership role",
+          "resume_section": "Core Skills",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "requirement_id": "REQ-026",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "regularly mentor senior engineers and technical leaders",
+          "resume_section": "Core Skills",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": ""
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "role_id": "role_4304e27678a4",
+  "jd_hash": "4304e27678a4a967ed8104dded3303261dbcc288f1f861cd95ea88864f044157",
+  "resume_hash": "39bcf7cb4ce8465c1473aac72e2f7e508204ab72f291aadb972965098280b8e0",
+  "requirements_version": "2.0.0",
+  "prompt_version": "MATCH_EVIDENCE_V2",
+  "model_id": "llama-3.1-8b-instant",
+  "run_id": "a80d8e2b",
+  "matches": [
+    {
+      "requirement_id": "REQ-9af878aa85",
+      "requirement_key": "aws",
+      "matched": false,
+      "evidence": [],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-fcfc4718e3",
+      "requirement_key": "llm",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "LLM-assisted workflows",
+          "resume_section": "Core Skills",
+          "start_offset": 1045,
+          "end_offset": 1072
+        },
+        {
+          "quote": "LLM-assisted analysis",
+          "resume_section": "Selected Projects & Experience",
+          "start_offset": 1345,
+          "end_offset": 1358
+        }
+      ],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-d587f67428",
+      "requirement_key": "spark",
+      "matched": false,
+      "evidence": [],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-2f1a867fb9",
+      "requirement_key": "datadog",
+      "matched": false,
+      "evidence": [],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-a15cfe2741",
+      "requirement_key": "fast_api",
+      "matched": false,
+      "evidence": [],
+      "notes": "",
+      "invalid_quote": true
+    },
+    {
+      "requirement_id": "REQ-11e8869b0d",
+      "requirement_key": "github",
+      "matched": false,
+      "evidence": [],
+      "notes": "",
+      "invalid_quote": true
+    },
+    {
+      "requirement_id": "REQ-10a3707f08",
+      "requirement_key": "python_3",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Python, JavaScript (ES6+), TypeScript, HTML, CSS/Sass",
+          "resume_section": "Core Skills",
+          "start_offset": 104,
+          "end_offset": 115
+        }
+      ],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-1e41d695b9",
+      "requirement_key": "type_script",
+      "matched": false,
+      "evidence": [],
+      "notes": "",
+      "invalid_quote": true
+    },
+    {
+      "requirement_id": "REQ-d1427a4901",
+      "requirement_key": "collaboration",
+      "matched": false,
+      "evidence": [],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-54e747cdb3",
+      "requirement_key": "technical_leadership",
+      "matched": false,
+      "evidence": [],
+      "notes": "",
+      "invalid_quote": false
+    }
+  ]
+}

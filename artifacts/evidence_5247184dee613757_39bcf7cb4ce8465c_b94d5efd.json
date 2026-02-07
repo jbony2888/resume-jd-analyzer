@@ -1,0 +1,261 @@
+{
+  "role_id": "role_5247184dee61",
+  "jd_hash": "5247184dee613757f4e27b6f0ea4d2016c5862f2d14d7574d7918f63b662d85d",
+  "resume_hash": "39bcf7cb4ce8465c1473aac72e2f7e508204ab72f291aadb972965098280b8e0",
+  "requirements_version": "2.0.0",
+  "prompt_version": "MATCH_EVIDENCE_V2",
+  "model_id": "llama-3.1-8b-instant",
+  "run_id": "b94d5efd",
+  "matches": [
+    {
+      "requirement_id": "REQ-3b7ecb97f6",
+      "requirement_key": "applied_machine_learning",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "LLM-assisted workflows, secure backend architectures, and human-centered AI systems with explicit decision boundaries.",
+          "resume_section": "Summary",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-fcfc4718e3",
+      "requirement_key": "llm",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "LLM-assisted workflows, secure backend architectures, and human-centered AI systems with explicit decision boundaries.",
+          "resume_section": "Summary",
+          "start_offset": 0,
+          "end_offset": 0
+        },
+        {
+          "quote": "LLM-assisted structured extraction and classification",
+          "resume_section": "Core Skills",
+          "start_offset": 0,
+          "end_offset": 0
+        },
+        {
+          "quote": "LLM-assisted pipeline supporting receipt processing and food-justice analytics.",
+          "resume_section": "Selected Projects & Experience",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-9f96b6d1ad",
+      "requirement_key": "evaluation_strategies",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Flagged low-confidence outputs for mandatory human review rather than auto-acceptance",
+          "resume_section": "Selected Projects & Experience",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-10a3707f08",
+      "requirement_key": "python_3",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Python, JavaScript (ES6+), TypeScript, HTML, CSS/Sass",
+          "resume_section": "Core Skills",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-7b810317c7",
+      "requirement_key": "react",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "React, React Native, Next.js, Node.js, Express, Flask, FastAPI",
+          "resume_section": "Core Skills",
+          "start_offset": 0,
+          "end_offset": 0
+        },
+        {
+          "quote": "Built custom UI components using React and Adobe Experience Manager (AEM)",
+          "resume_section": "Professional Experience",
+          "start_offset": 0,
+          "end_offset": 0
+        },
+        {
+          "quote": "Developed a React + TypeScript frontend with feature-based organization and controlled API access patterns",
+          "resume_section": "Selected Projects & Experience",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-9bf4effb4d",
+      "requirement_key": "react_aria",
+      "matched": false,
+      "evidence": [],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-ae44088f60",
+      "requirement_key": "reliability",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Strong focus on auditability, data separation, operational reliability, and cost-aware design in regulated and mission-driven environments.",
+          "resume_section": "Summary",
+          "start_offset": 0,
+          "end_offset": 0
+        },
+        {
+          "quote": "Optimized backend performance using Redis caching and staged processing",
+          "resume_section": "Selected Projects & Experience",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-9af878aa85",
+      "requirement_key": "aws",
+      "matched": false,
+      "evidence": [],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-d587f67428",
+      "requirement_key": "spark",
+      "matched": false,
+      "evidence": [],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-2f1a867fb9",
+      "requirement_key": "datadog",
+      "matched": false,
+      "evidence": [],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-a15cfe2741",
+      "requirement_key": "fast_api",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "React, React Native, Next.js, Node.js, Express, Flask, FastAPI",
+          "resume_section": "Core Skills",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-11e8869b0d",
+      "requirement_key": "github",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "LinkedIn | GitHub | Portfolio",
+          "resume_section": "Contact Information",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-5633c3d3bf",
+      "requirement_key": "next_js",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "React, React Native, Next.js, Node.js, Express, Flask, FastAPI",
+          "resume_section": "Core Skills",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-2242f1f3e0",
+      "requirement_key": "pager_duty",
+      "matched": false,
+      "evidence": [],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-5b9d71acb6",
+      "requirement_key": "remix",
+      "matched": false,
+      "evidence": [],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-1e41d695b9",
+      "requirement_key": "type_script",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Python, JavaScript (ES6+), TypeScript, HTML, CSS/Sass",
+          "resume_section": "Core Skills",
+          "start_offset": 0,
+          "end_offset": 0
+        },
+        {
+          "quote": "Developed a React + TypeScript frontend with feature-based organization and controlled API access patterns",
+          "resume_section": "Selected Projects & Experience",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-d1427a4901",
+      "requirement_key": "collaboration",
+      "matched": false,
+      "evidence": [],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-54e747cdb3",
+      "requirement_key": "technical_leadership",
+      "matched": false,
+      "evidence": [],
+      "notes": "",
+      "invalid_quote": false
+    }
+  ]
+}

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GapAnalyzer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lucide-static/0.263.1/font/lucide.min.css">
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-900 font-sans">
+  <!-- Header -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center">
+      <i data-lucide="cpu" class="h-6 w-6 text-indigo-600 mr-2"></i>
+      <h1 class="text-xl font-bold text-slate-800">Gap<span class="text-indigo-600">Analyzer</span></h1>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+    <!-- Input Section (upfront) -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div class="flex flex-col space-y-2">
+        <div class="flex items-center justify-between">
+          <label class="text-sm font-bold text-slate-700 flex items-center">
+            <i data-lucide="briefcase" class="h-4 w-4 mr-2"></i> Job Description
+          </label>
+          <span id="jd-char-count" class="text-xs text-slate-400">0 chars</span>
+        </div>
+        <textarea id="jd-text" rows="12" placeholder="Paste Job Description here..."
+          class="flex-1 p-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-sm font-mono leading-relaxed resize-none shadow-sm">{{ sample_jd }}</textarea>
+      </div>
+
+      <div class="flex flex-col space-y-2">
+        <div class="flex items-center justify-between">
+          <label class="text-sm font-bold text-slate-700 flex items-center">
+            <i data-lucide="file-text" class="h-4 w-4 mr-2"></i> Master Résumé
+          </label>
+        </div>
+        <p class="text-xs text-slate-500 -mt-1">Base résumé used for all JD gap analyses. Upload once, compare against any job.</p>
+        <div id="upload-zone" class="flex-1 min-h-[300px] border-2 border-dashed rounded-lg flex flex-col items-center justify-center cursor-pointer transition-all group relative overflow-hidden border-slate-300 bg-slate-50 hover:bg-slate-100 hover:border-indigo-400">
+          <input type="file" id="file-input" class="hidden" accept=".pdf,.txt">
+          <div id="upload-placeholder" class="text-center p-6 text-slate-500 group-hover:text-indigo-600 transition-colors">
+            <div class="bg-white group-hover:bg-indigo-50 text-slate-400 group-hover:text-indigo-500 rounded-full p-4 w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-sm border border-slate-200 group-hover:border-indigo-100 transition-all">
+              <i data-lucide="upload" class="h-8 w-8"></i>
+            </div>
+            <h3 class="font-bold text-lg mb-1">Set Master Résumé</h3>
+            <p class="text-slate-400 text-sm">Upload PDF or TXT — used as base for all comparisons</p>
+            <p class="text-slate-300 text-xs mt-2 uppercase tracking-wide font-medium">PDF or TXT</p>
+          </div>
+          <div id="upload-success" class="hidden text-center p-6">
+            <div class="bg-green-100 text-green-600 rounded-full p-4 w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-sm">
+              <i data-lucide="check-circle" class="h-8 w-8"></i>
+            </div>
+            <h3 id="upload-filename" class="font-bold text-slate-800 text-lg"></h3>
+            <div class="flex items-center justify-center space-x-2 mt-2 text-slate-500 text-sm">
+              <i data-lucide="file-text" class="h-3 w-3"></i>
+              <span id="upload-char-count"></span>
+            </div>
+            <p class="text-indigo-600 text-sm font-medium mt-6 group-hover:underline opacity-0 group-hover:opacity-100 transition-opacity">Click to replace master</p>
+          </div>
+          <div id="upload-loading" class="hidden flex flex-col items-center animate-pulse">
+            <i data-lucide="loader-2" class="h-10 w-10 text-indigo-500 animate-spin mb-3"></i>
+            <p class="text-slate-600 font-medium">Extracting text...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Action Bar -->
+    <div class="flex items-center justify-center py-4">
+      <div id="analyze-button-wrap" class="flex items-center justify-center">
+        <button type="button" id="btn-analyze" disabled
+          class="flex items-center px-8 py-3 rounded-full font-bold text-white shadow-lg transform transition-all hover:-translate-y-0.5 bg-slate-300 cursor-not-allowed">
+          <i data-lucide="play" class="h-5 w-5 mr-2 fill-current"></i>
+          <span id="btn-analyze-text">Run Gap Analysis</span>
+        </button>
+      </div>
+      <div id="analyze-loading" class="hidden flex items-center justify-center gap-3 px-8 py-3 text-indigo-600">
+        <i data-lucide="loader-2" class="h-6 w-6 animate-spin"></i>
+        <span class="font-semibold">Analyzing...</span>
+      </div>
+    </div>
+
+    <!-- Success / Error Messages -->
+    <div id="save-success" class="hidden bg-green-50 border border-green-200 rounded-lg p-4 flex items-center text-green-700">
+      <i data-lucide="check-circle" class="h-5 w-5 mr-3"></i>
+      <span id="save-success-text"></span>
+    </div>
+    <div id="error-message" class="hidden bg-red-50 border border-red-200 rounded-lg p-4 flex items-center text-red-700">
+      <i data-lucide="alert-circle" class="h-5 w-5 mr-3"></i>
+      <span id="error-text"></span>
+    </div>
+
+    <!-- Results Section -->
+    <div id="results-section" class="hidden space-y-8">
+      <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 flex flex-col md:flex-row items-center justify-between">
+        <div>
+          <h2 class="text-2xl font-bold text-slate-800">Analysis Report</h2>
+          <p class="text-slate-500">Comparing <span id="report-candidate" class="font-semibold text-slate-800"></span> against <span id="report-role" class="font-semibold text-slate-800"></span></p>
+        </div>
+        <div class="flex items-center mt-4 md:mt-0 gap-4">
+          <button type="button" id="btn-tailor" disabled
+            class="flex items-center px-4 py-2 bg-indigo-50 text-indigo-700 rounded-lg hover:bg-indigo-100 transition-colors font-semibold text-sm border border-indigo-200 disabled:opacity-50">
+            <i data-lucide="wand-2" class="h-4 w-4 mr-2"></i>
+            <span id="btn-tailor-text">Generate Tailored Resume</span>
+          </button>
+          <div class="text-right mr-4">
+            <div class="text-sm text-slate-500 font-medium">Match Score</div>
+            <div id="match-score" class="text-3xl font-bold"></div>
+          </div>
+          <div class="h-12 w-12 rounded-full bg-slate-100 flex items-center justify-center">
+            <i data-lucide="bar-chart-3" class="h-6 w-6 text-indigo-600"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gap Analysis Table -->
+      <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+        <div class="px-6 py-4 border-b border-slate-100 bg-slate-50/50">
+          <h3 class="font-bold text-slate-800 flex items-center">
+            <i data-lucide="search" class="h-4 w-4 mr-2 text-indigo-500"></i>
+            Detailed Signal Comparison
+          </h3>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm text-left">
+            <thead class="bg-slate-50 text-slate-500 font-medium border-b border-slate-200">
+              <tr>
+                <th class="px-6 py-3 w-32">Category</th>
+                <th class="px-6 py-3 w-48">Requirement</th>
+                <th class="px-6 py-3 w-24">Priority</th>
+                <th class="px-6 py-3 w-24 text-center">Status</th>
+                <th class="px-6 py-3">Evidence / Gap Analysis</th>
+              </tr>
+            </thead>
+            <tbody id="gap-table-body" class="divide-y divide-slate-100"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tailored Resume Result -->
+      <div id="tailored-section" class="hidden bg-white rounded-xl shadow-lg border border-indigo-100 overflow-hidden">
+        <div class="px-6 py-4 bg-indigo-600 text-white flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
+          <h3 class="font-bold flex items-center text-lg">
+            <i data-lucide="wand-2" class="h-5 w-5 mr-2"></i>
+            Tailored Resume
+          </h3>
+          <div class="flex flex-wrap items-center gap-2 w-full sm:w-auto">
+            <input type="text" id="company-name" placeholder="Company name (for folder)"
+              class="px-3 py-1.5 rounded text-sm text-slate-800 placeholder-slate-400 min-w-[160px]">
+            <button type="button" id="btn-download-pdf" class="flex items-center space-x-1 text-xs bg-indigo-700 hover:bg-indigo-800 px-3 py-1.5 rounded transition-colors whitespace-nowrap">
+              <i data-lucide="download" class="h-3 w-3"></i>
+              <span>Download PDF</span>
+            </button>
+            <button type="button" id="btn-copy" class="flex items-center space-x-1 text-xs bg-indigo-500 hover:bg-indigo-700 px-3 py-1.5 rounded transition-colors">
+              <i data-lucide="copy" class="h-3 w-3"></i>
+              <span>Copy Text</span>
+            </button>
+          </div>
+        </div>
+        <div class="p-6 bg-slate-50 max-h-[600px] overflow-y-auto">
+          <pre id="tailored-content" class="whitespace-pre-wrap font-mono text-sm text-slate-700 leading-relaxed"></pre>
+        </div>
+        <div class="p-4 bg-indigo-50 border-t border-indigo-100 flex flex-col sm:flex-row gap-3 items-center">
+          <div class="flex-1 w-full relative">
+            <i data-lucide="message-square" class="absolute left-3 top-3 h-4 w-4 text-slate-400"></i>
+            <input type="text" id="refine-input" placeholder="E.g. 'Make it more professional', 'Focus on leadership'..."
+              class="w-full pl-9 pr-4 py-2 rounded-lg border border-indigo-200 focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-sm shadow-sm">
+          </div>
+          <button type="button" id="btn-refine" disabled
+            class="flex items-center px-4 py-2 rounded-lg font-semibold text-sm bg-slate-200 text-slate-400 cursor-not-allowed">
+            <i data-lucide="refresh-cw" class="h-4 w-4 mr-2"></i>
+            Regenerate
+          </button>
+        </div>
+      </div>
+
+      <!-- Extracted Signals -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-slate-50 rounded-lg p-4 border border-slate-200">
+          <h4 class="font-bold text-slate-700 text-xs uppercase tracking-wider mb-4 flex items-center">
+            <i data-lucide="briefcase" class="h-4 w-4 mr-2"></i> Extracted JD Signals
+          </h4>
+          <div id="jd-signals" class="space-y-2 h-96 overflow-y-auto pr-2"></div>
+        </div>
+        <div class="bg-slate-50 rounded-lg p-4 border border-slate-200">
+          <h4 class="font-bold text-slate-700 text-xs uppercase tracking-wider mb-4 flex items-center">
+            <i data-lucide="file-text" class="h-4 w-4 mr-2"></i> Extracted Resume Signals
+          </h4>
+          <div id="resume-signals" class="space-y-2 h-96 overflow-y-auto pr-2"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <style>
+    .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+    .custom-scrollbar::-webkit-scrollbar-track { background: #f1f5f9; }
+    .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+    .status-MATCH { @apply bg-green-100 text-green-800 border-green-200; }
+    .status-MISSING { @apply bg-red-100 text-red-800 border-red-200; }
+    .status-GAP { @apply bg-yellow-100 text-yellow-800 border-yellow-200; }
+  </style>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+
+    let jdAnalysis = null, resumeAnalysis = null, gapReport = null, matchScore = 0;
+    let tailoredText = '';
+    let resumeText = '';
+    let fileName = '';
+
+    // Elements
+    const $ = id => document.getElementById(id);
+    const jdTextarea = $('jd-text');
+    const fileInput = $('file-input');
+    const uploadZone = $('upload-zone');
+    const uploadPlaceholder = $('upload-placeholder');
+    const uploadSuccess = $('upload-success');
+    const uploadLoading = $('upload-loading');
+    const btnAnalyze = $('btn-analyze');
+    const resultsSection = $('results-section');
+    const errorDiv = $('error-message');
+    const tailoredSection = $('tailored-section');
+
+    $('jd-text').addEventListener('input', () => { $('jd-char-count').textContent = jdTextarea.value.length + ' chars'; updateAnalyzeButton(); });
+    $('jd-text').dispatchEvent(new Event('input'));
+
+    async function loadMasterResume() {
+      try {
+        const r = await fetch('/api/master-resume');
+        const data = await r.json();
+        if (data.text && data.text.trim().length > 0) {
+          resumeText = data.text;
+          fileName = data.filename || 'Master Resume';
+          showUploadSuccess(resumeText.length);
+          updateAnalyzeButton();
+        }
+      } catch (e) { /* ignore */ }
+    }
+    loadMasterResume();
+
+    function updateAnalyzeButton() {
+      const hasJd = jdTextarea.value.trim().length > 0;
+      const hasResume = resumeText.trim().length > 0;
+      btnAnalyze.disabled = !(hasJd && hasResume);
+      if (!btnAnalyze.disabled) {
+        btnAnalyze.classList.remove('bg-slate-300', 'cursor-not-allowed');
+        btnAnalyze.classList.add('bg-indigo-600', 'hover:bg-indigo-700');
+      } else {
+        btnAnalyze.classList.add('bg-slate-300', 'cursor-not-allowed');
+        btnAnalyze.classList.remove('bg-indigo-600', 'hover:bg-indigo-700');
+      }
+    }
+
+    uploadZone.addEventListener('click', () => fileInput.click());
+    fileInput.addEventListener('change', async (e) => {
+      const file = e.target.files?.[0];
+      if (!file) return;
+      uploadPlaceholder.classList.add('hidden');
+      uploadSuccess.classList.add('hidden');
+      uploadLoading.classList.remove('hidden');
+      const fd = new FormData();
+      fd.append('file', file);
+      try {
+        const r = await fetch('/api/master-resume', { method: 'POST', body: fd });
+        const data = await r.json();
+        if (data.error) throw new Error(data.error);
+        resumeText = data.text;
+        fileName = data.filename || file.name;
+        showUploadSuccess(resumeText.length);
+        updateAnalyzeButton();
+      } catch (err) {
+        showError('Failed to set master resume: ' + err.message);
+      }
+      uploadLoading.classList.add('hidden');
+    });
+
+    function showUploadSuccess(len) {
+      uploadPlaceholder.classList.add('hidden');
+      uploadSuccess.classList.remove('hidden');
+      $('upload-filename').textContent = fileName;
+      $('upload-char-count').textContent = len.toLocaleString() + ' characters extracted';
+      lucide.createIcons();
+    }
+
+    function showError(msg) {
+      errorDiv.classList.remove('hidden');
+      $('error-text').textContent = msg;
+    }
+
+    function hideError() {
+      errorDiv.classList.add('hidden');
+    }
+
+    function showSaveSuccess(savePath) {
+      errorDiv.classList.add('hidden');
+      $('save-success-text').textContent = 'Saved to ' + savePath;
+      $('save-success').classList.remove('hidden');
+      lucide.createIcons();
+      setTimeout(() => $('save-success').classList.add('hidden'), 5000);
+    }
+
+    function setLoading(loading) {
+      btnAnalyze.disabled = loading;
+      const wrap = $('analyze-button-wrap');
+      const loadingEl = $('analyze-loading');
+      if (loading) {
+        wrap.classList.add('hidden');
+        loadingEl.classList.remove('hidden');
+      } else {
+        wrap.classList.remove('hidden');
+        loadingEl.classList.add('hidden');
+        updateAnalyzeButton();
+      }
+      lucide.createIcons();
+    }
+
+    btnAnalyze.addEventListener('click', async () => {
+      hideError();
+      tailoredText = '';
+      $('tailored-section').classList.add('hidden');
+      setLoading(true);
+      const jd = jdTextarea.value.trim();
+      const payload = { jd_text: jd, resume_text: resumeText };
+      try {
+        const buildRes = await fetch('/api/requirements/build', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ jd_text: jd }),
+        });
+        const buildData = await buildRes.json();
+        if (buildData.error) throw new Error(buildData.error);
+
+        const r = await fetch('/api/analyze', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+        const data = await r.json();
+        if (data.error) throw new Error(data.error);
+        jdAnalysis = data.jd_analysis;
+        resumeAnalysis = data.resume_analysis;
+        gapReport = data.gap_report;
+        matchScore = data.match_score;
+        renderResults();
+        $('btn-tailor').disabled = false;
+      } catch (err) {
+        showError(err.message);
+      }
+      setLoading(false);
+    });
+
+    function renderResults() {
+      resultsSection.classList.remove('hidden');
+      $('report-candidate').textContent = resumeAnalysis?.candidate_name || 'Candidate';
+      $('report-role').textContent = jdAnalysis?.role_title || 'Role';
+      const scoreEl = $('match-score');
+      scoreEl.textContent = matchScore + '%';
+      scoreEl.className = 'text-3xl font-bold ' + (matchScore > 70 ? 'text-green-600' : matchScore > 40 ? 'text-yellow-600' : 'text-red-600');
+
+      const tbody = $('gap-table-body');
+      tbody.innerHTML = gapReport.map(item => `
+        <tr class="hover:bg-slate-50">
+          <td class="px-6 py-4 font-medium text-slate-500">${item.category}</td>
+          <td class="px-6 py-4 font-semibold text-slate-800">
+            ${item.name}
+            <div class="text-xs font-normal text-slate-400 mt-0.5">${item.description}</div>
+          </td>
+          <td class="px-6 py-4">
+            <span class="text-xs px-2 py-0.5 rounded-full ${item.importance === 'Must-have' ? 'bg-indigo-50 text-indigo-700' : 'bg-slate-100 text-slate-600'}">${item.importance}</span>
+          </td>
+          <td class="px-6 py-4 text-center">
+            <span class="px-2 py-1 rounded text-xs font-bold border status-${item.status}">${item.status}</span>
+          </td>
+          <td class="px-6 py-4 text-slate-600 italic">"${item.evidence}"</td>
+        </tr>
+      `).join('');
+
+      $('jd-signals').innerHTML = (jdAnalysis?.requirements || []).map(req => `
+        <div class="bg-white p-3 rounded-lg border border-slate-100 shadow-sm mb-2">
+          <div class="flex justify-between items-start mb-1">
+            <span class="font-semibold text-slate-800 text-sm">${req.name}</span>
+            <span class="text-[10px] px-2 py-0.5 rounded-full uppercase font-bold ${req.importance === 'Must-have' ? 'bg-red-100 text-red-700' : 'bg-blue-100 text-blue-700'}">${req.importance}</span>
+          </div>
+          <div class="text-xs text-slate-600">${req.description}</div>
+        </div>
+      `).join('');
+
+      $('resume-signals').innerHTML = (resumeAnalysis?.signals || []).map(sig => `
+        <div class="bg-white p-3 rounded-lg border border-slate-100 shadow-sm mb-2">
+          <div class="flex justify-between items-start mb-1">
+            <span class="font-semibold text-slate-800 text-sm">${sig.name}</span>
+            <span class="text-[10px] px-2 py-0.5 rounded-full bg-slate-200 text-slate-600 uppercase font-bold">${sig.category}</span>
+          </div>
+          <div class="text-xs text-slate-600 mb-1">${sig.evidence || ''}</div>
+          ${sig.years_experience != null ? `<div class="text-xs text-slate-400 italic border-t border-slate-50 pt-1 mt-1">Experience: ${sig.years_experience} years</div>` : ''}
+        </div>
+      `).join('');
+
+      lucide.createIcons();
+    }
+
+    $('btn-tailor').addEventListener('click', async () => {
+      $('btn-tailor').disabled = true;
+      $('btn-tailor-text').textContent = 'Generating...';
+      try {
+        const r = await fetch('/api/tailor', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ resume_text: resumeText, jd_text: jdTextarea.value.trim() }),
+        });
+        const data = await r.json();
+        if (data.error) throw new Error(data.error);
+        tailoredText = data.tailored_text;
+        $('tailored-content').textContent = tailoredText;
+        tailoredSection.classList.remove('hidden');
+      } catch (err) {
+        showError('Failed to tailor: ' + err.message);
+      }
+      $('btn-tailor').disabled = false;
+      $('btn-tailor-text').textContent = 'Generate Tailored Resume';
+      lucide.createIcons();
+    });
+
+    $('btn-copy').addEventListener('click', () => {
+      navigator.clipboard.writeText(tailoredText);
+      const span = $('btn-copy').querySelector('span');
+      span.textContent = 'Copied!';
+      setTimeout(() => span.textContent = 'Copy Text', 2000);
+    });
+
+    $('btn-download-pdf').addEventListener('click', async () => {
+      const companyName = ($('company-name').value || '').trim() || 'General';
+      const safeCompany = companyName.replace(/[/\\:*?"<>|]/g, '_').trim() || 'General';
+      const filename = (resumeAnalysis?.candidate_name || 'Candidate').replace(/ /g, '_') + '_Tailored_Resume.pdf';
+      try {
+        const r = await fetch('/api/download-pdf', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            tailored_text: tailoredText,
+            candidate_name: resumeAnalysis?.candidate_name || 'Candidate',
+            company_name: companyName,
+          }),
+        });
+        if (!r.ok) throw new Error((await r.json()).error || 'Download failed');
+        const blob = await r.blob();
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = filename;
+        a.click();
+        URL.revokeObjectURL(a.href);
+        showSaveSuccess('resumes/' + safeCompany + '/' + filename);
+      } catch (err) {
+        showError('Failed to generate PDF: ' + err.message);
+      }
+    });
+
+    $('refine-input').addEventListener('input', () => {
+      const v = $('refine-input').value.trim();
+      $('btn-refine').disabled = !v;
+      if (v) {
+        $('btn-refine').classList.remove('bg-slate-200', 'text-slate-400', 'cursor-not-allowed');
+        $('btn-refine').classList.add('bg-indigo-600', 'text-white', 'hover:bg-indigo-700');
+      } else {
+        $('btn-refine').classList.add('bg-slate-200', 'text-slate-400', 'cursor-not-allowed');
+        $('btn-refine').classList.remove('bg-indigo-600', 'text-white', 'hover:bg-indigo-700');
+      }
+    });
+
+    $('refine-input').addEventListener('keydown', (e) => { if (e.key === 'Enter') $('btn-refine').click(); });
+
+    $('btn-refine').addEventListener('click', async () => {
+      const instructions = $('refine-input').value.trim();
+      if (!instructions) return;
+      $('btn-refine').disabled = true;
+      const btn = $('btn-refine');
+      btn.innerHTML = '<i data-lucide="loader-2" class="h-4 w-4 mr-2 animate-spin"></i>Regenerating...';
+      lucide.createIcons();
+      try {
+        const r = await fetch('/api/refine', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            resume_text: resumeText,
+            jd_text: jdTextarea.value.trim(),
+            refine_instructions: instructions,
+          }),
+        });
+        const data = await r.json();
+        if (data.error) throw new Error(data.error);
+        tailoredText = data.tailored_text;
+        $('tailored-content').textContent = tailoredText;
+        $('refine-input').value = '';
+        $('refine-input').dispatchEvent(new Event('input'));
+      } catch (err) {
+        showError('Failed to refine: ' + err.message);
+      }
+      btn.innerHTML = '<i data-lucide="refresh-cw" class="h-4 w-4 mr-2"></i>Regenerate';
+      lucide.createIcons();
+    });
+  </script>
+</body>
+</html>

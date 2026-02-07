@@ -1,0 +1,17 @@
+Senior Python Developer
+
+We are looking for a Senior Python Developer with 5+ years of experience in building scalable web applications.
+
+Requirements:
+- Strong proficiency in Python 3.x
+- Experience with FastAPI or Django
+- Knowledge of PostgreSQL and Redis
+- Experience with Docker and Kubernetes
+- Familiarity with CI/CD pipelines (GitHub Actions)
+- Cloud experience (AWS or GCP)
+- Strong communication and teamwork skills
+
+Nice to have:
+- Experience with LLM APIs (OpenAI, Groq)
+- Knowledge of Terraform or Pulumi
+- Contribution to open source projects

@@ -1,0 +1,189 @@
+{
+  "role_id": "test_role",
+  "jd_hash": "c788411a9528d111a0593e1aa75ded637ab0591b7f0c6d8e7939f6541b672647",
+  "resume_hash": "39bcf7cb4ce8465c1473aac72e2f7e508204ab72f291aadb972965098280b8e0",
+  "requirements_version": "1.0.0",
+  "prompt_version": "MATCH_EVIDENCE_V2",
+  "model_id": "llama-3.1-8b-instant",
+  "run_id": "9ae93394",
+  "matches": [
+    {
+      "requirement_id": "REQ-001",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Python,  JavaScript  (ES6+),  TypeScript,  HTML,  CSS/Sass",
+          "resume_section": "Core  Skills  Languages",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-002",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "React,  React  Native,  Next.js,  Node.js,  Express,  Flask,  FastAPI",
+          "resume_section": "Core  Skills  Frameworks  &  Platforms",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-003",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "PostgreSQL,  MongoDB,  Supabase,  Firebase,  Redis",
+          "resume_section": "Databases  &  Storage",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-004",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "PostgreSQL,  MongoDB,  Supabase,  Firebase,  Redis",
+          "resume_section": "Databases  &  Storage",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-005",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Render,  Vercel,  Google  Cloud  SQL,  Cloud  Functions,  CI/CD  pipelines,  environment-based  configuration",
+          "resume_section": "Cloud  &  DevOps",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-006",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Render,  Vercel,  Google  Cloud  SQL,  Cloud  Functions,  CI/CD  pipelines,  environment-based  configuration",
+          "resume_section": "Cloud  &  DevOps",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-007",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Render,  Vercel,  Google  Cloud  SQL,  Cloud  Functions,  CI/CD  pipelines,  environment-based  configuration",
+          "resume_section": "Cloud  &  DevOps",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-008",
+      "requirement_key": "",
+      "matched": false,
+      "evidence": [],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-009",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Strong  experience  translating  organizational  constraints  into  technical  design",
+          "resume_section": "Additional  Notes",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-010",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "LLM-assisted  structured  extraction  and  classification",
+          "resume_section": "Applied  AI  /  LLM  Systems",
+          "start_offset": 0,
+          "end_offset": 0
+        },
+        {
+          "quote": "LLM-assisted  analysis  for  summarization,  semantic  parsing,  structured  field  extraction,  and  tagging,  with  strict  JSON  schema  constraints",
+          "resume_section": "Selected  Projects  &  Experience  Illinois  Fatherhood  Initiative",
+          "start_offset": 0,
+          "end_offset": 0
+        },
+        {
+          "quote": "LLM-assisted  pipeline  supporting  receipt  processing  and  food-justice  analytics",
+          "resume_section": "National  Black  Food  &  Justice  Alliance  (NBFJA)",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-011",
+      "requirement_key": "",
+      "matched": false,
+      "evidence": [],
+      "notes": "",
+      "invalid_quote": false
+    },
+    {
+      "requirement_id": "REQ-012",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Selected  Projects  &  Experience",
+          "resume_section": "Selected  Projects  &  Experience",
+          "start_offset": 0,
+          "end_offset": 0
+        }
+      ],
+      "notes": "",
+      "invalid_quote": false
+    }
+  ]
+}

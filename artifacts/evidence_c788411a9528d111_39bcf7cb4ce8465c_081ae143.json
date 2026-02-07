@@ -1,0 +1,174 @@
+{
+  "role_id": "test_role",
+  "jd_hash": "c788411a9528d111a0593e1aa75ded637ab0591b7f0c6d8e7939f6541b672647",
+  "resume_hash": "39bcf7cb4ce8465c1473aac72e2f7e508204ab72f291aadb972965098280b8e0",
+  "requirements_version": "1.0.0",
+  "prompt_version": "1.0.0",
+  "model_id": "llama-3.3-70b-versatile",
+  "run_id": "081ae143",
+  "matches": [
+    {
+      "requirement_id": "REQ-001",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Python",
+          "resume_section": "Core Skills",
+          "start_offset": null,
+          "end_offset": null
+        },
+        {
+          "quote": "Delivered instruction in Python",
+          "resume_section": "Professional Experience",
+          "start_offset": null,
+          "end_offset": null
+        }
+      ],
+      "confidence": "high",
+      "notes": "Multiple mentions of Python in the resume"
+    },
+    {
+      "requirement_id": "REQ-002",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "FastAPI",
+          "resume_section": "Core Skills",
+          "start_offset": null,
+          "end_offset": null
+        }
+      ],
+      "confidence": "high",
+      "notes": "FastAPI is listed under Frameworks & Platforms"
+    },
+    {
+      "requirement_id": "REQ-003",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "PostgreSQL",
+          "resume_section": "Databases & Storage",
+          "start_offset": null,
+          "end_offset": null
+        },
+        {
+          "quote": "Google Cloud SQL (PostgreSQL)",
+          "resume_section": "Selected Projects & Experience",
+          "start_offset": null,
+          "end_offset": null
+        }
+      ],
+      "confidence": "high",
+      "notes": "PostgreSQL is mentioned in multiple sections"
+    },
+    {
+      "requirement_id": "REQ-004",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Redis",
+          "resume_section": "Databases & Storage",
+          "start_offset": null,
+          "end_offset": null
+        },
+        {
+          "quote": "Introduced Redis caching",
+          "resume_section": "Selected Projects & Experience",
+          "start_offset": null,
+          "end_offset": null
+        }
+      ],
+      "confidence": "high",
+      "notes": "Redis is mentioned in multiple sections"
+    },
+    {
+      "requirement_id": "REQ-005",
+      "matched": false,
+      "evidence": [],
+      "confidence": "low",
+      "notes": "No mention of Docker in the resume"
+    },
+    {
+      "requirement_id": "REQ-006",
+      "matched": false,
+      "evidence": [],
+      "confidence": "low",
+      "notes": "No mention of Kubernetes in the resume"
+    },
+    {
+      "requirement_id": "REQ-007",
+      "matched": false,
+      "evidence": [],
+      "confidence": "low",
+      "notes": "No mention of CI/CD pipelines or GitHub Actions in the resume"
+    },
+    {
+      "requirement_id": "REQ-008",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Google Cloud SQL",
+          "resume_section": "Selected Projects & Experience",
+          "start_offset": null,
+          "end_offset": null
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Google Cloud is mentioned, but not explicitly as a cloud experience"
+    },
+    {
+      "requirement_id": "REQ-009",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Strong experience translating organizational constraints into technical design",
+          "resume_section": "Additional Notes",
+          "start_offset": null,
+          "end_offset": null
+        },
+        {
+          "quote": "Worked within cross-functional agile teams",
+          "resume_section": "Professional Experience",
+          "start_offset": null,
+          "end_offset": null
+        }
+      ],
+      "confidence": "high",
+      "notes": "Multiple mentions of teamwork and collaboration"
+    },
+    {
+      "requirement_id": "REQ-010",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "LLM-assisted workflows",
+          "resume_section": "Core Skills",
+          "start_offset": null,
+          "end_offset": null
+        },
+        {
+          "quote": "LLM-assisted structured extraction and classification",
+          "resume_section": "Core Skills",
+          "start_offset": null,
+          "end_offset": null
+        }
+      ],
+      "confidence": "high",
+      "notes": "Multiple mentions of LLM-assisted workflows"
+    },
+    {
+      "requirement_id": "REQ-011",
+      "matched": false,
+      "evidence": [],
+      "confidence": "low",
+      "notes": "No mention of Terraform or Pulumi in the resume"
+    },
+    {
+      "requirement_id": "REQ-012",
+      "matched": false,
+      "evidence": [],
+      "confidence": "low",
+      "notes": "No mention of open source projects in the resume"
+    }
+  ]
+}

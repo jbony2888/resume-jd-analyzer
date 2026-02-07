@@ -1,0 +1,263 @@
+{
+  "role_id": "role_784a9663fc2a",
+  "jd_hash": "784a9663fc2a35c204df3eaa0e8a2b5d912e482451178b36738b47f90f62ad04",
+  "resume_hash": "39bcf7cb4ce8465c1473aac72e2f7e508204ab72f291aadb972965098280b8e0",
+  "requirements_version": "1.0.0",
+  "prompt_version": "1.0.0",
+  "model_id": "llama-3.3-70b-versatile",
+  "run_id": "038d6e44",
+  "matches": [
+    {
+      "requirement_id": "REQ-001",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Python",
+          "resume_section": "Core Skills",
+          "start_offset": null,
+          "end_offset": null
+        }
+      ],
+      "confidence": "high",
+      "notes": "Found in Core Skills section under Languages"
+    },
+    {
+      "requirement_id": "REQ-002",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "TypeScript",
+          "resume_section": "Core Skills",
+          "start_offset": null,
+          "end_offset": null
+        }
+      ],
+      "confidence": "high",
+      "notes": "Found in Core Skills section under Languages"
+    },
+    {
+      "requirement_id": "REQ-003",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "FastAPI",
+          "resume_section": "Core Skills",
+          "start_offset": null,
+          "end_offset": null
+        }
+      ],
+      "confidence": "high",
+      "notes": "Found in Core Skills section under Frameworks & Platforms"
+    },
+    {
+      "requirement_id": "REQ-004",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "React",
+          "resume_section": "Core Skills",
+          "start_offset": null,
+          "end_offset": null
+        }
+      ],
+      "confidence": "high",
+      "notes": "Found in Core Skills section under Frameworks & Platforms"
+    },
+    {
+      "requirement_id": "REQ-005",
+      "matched": false,
+      "evidence": [],
+      "confidence": "low",
+      "notes": "Not found in the resume"
+    },
+    {
+      "requirement_id": "REQ-006",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Next.js",
+          "resume_section": "Core Skills",
+          "start_offset": null,
+          "end_offset": null
+        }
+      ],
+      "confidence": "high",
+      "notes": "Found in Core Skills section under Frameworks & Platforms"
+    },
+    {
+      "requirement_id": "REQ-007",
+      "matched": false,
+      "evidence": [],
+      "confidence": "low",
+      "notes": "Not found in the resume"
+    },
+    {
+      "requirement_id": "REQ-008",
+      "matched": false,
+      "evidence": [],
+      "confidence": "low",
+      "notes": "Not found in the resume"
+    },
+    {
+      "requirement_id": "REQ-009",
+      "matched": false,
+      "evidence": [],
+      "confidence": "low",
+      "notes": "Not found in the resume"
+    },
+    {
+      "requirement_id": "REQ-010",
+      "matched": false,
+      "evidence": [],
+      "confidence": "low",
+      "notes": "Not found in the resume"
+    },
+    {
+      "requirement_id": "REQ-011",
+      "matched": false,
+      "evidence": [],
+      "confidence": "low",
+      "notes": "Not found in the resume"
+    },
+    {
+      "requirement_id": "REQ-012",
+      "matched": false,
+      "evidence": [],
+      "confidence": "low",
+      "notes": "Not found in the resume"
+    },
+    {
+      "requirement_id": "REQ-013",
+      "matched": false,
+      "evidence": [],
+      "confidence": "low",
+      "notes": "Not found in the resume"
+    },
+    {
+      "requirement_id": "REQ-014",
+      "matched": false,
+      "evidence": [],
+      "confidence": "low",
+      "notes": "Not found in the resume"
+    },
+    {
+      "requirement_id": "REQ-015",
+      "matched": false,
+      "evidence": [],
+      "confidence": "low",
+      "notes": "Not found in the resume"
+    },
+    {
+      "requirement_id": "REQ-016",
+      "matched": false,
+      "evidence": [],
+      "confidence": "low",
+      "notes": "Not found in the resume"
+    },
+    {
+      "requirement_id": "REQ-017",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "GitHub",
+          "resume_section": "Contact Information",
+          "start_offset": null,
+          "end_offset": null
+        }
+      ],
+      "confidence": "high",
+      "notes": "Found in Contact Information section"
+    },
+    {
+      "requirement_id": "REQ-018",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "LLM-assisted",
+          "resume_section": "Core Skills",
+          "start_offset": null,
+          "end_offset": null
+        }
+      ],
+      "confidence": "high",
+      "notes": "Found in Core Skills section under Applied AI / LLM Systems"
+    },
+    {
+      "requirement_id": "REQ-019",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Applied AI",
+          "resume_section": "Introduction",
+          "start_offset": null,
+          "end_offset": null
+        }
+      ],
+      "confidence": "high",
+      "notes": "Found in Introduction section"
+    },
+    {
+      "requirement_id": "REQ-020",
+      "matched": false,
+      "evidence": [],
+      "confidence": "low",
+      "notes": "Not found in the resume"
+    },
+    {
+      "requirement_id": "REQ-021",
+      "matched": false,
+      "evidence": [],
+      "confidence": "low",
+      "notes": "Not found in the resume"
+    },
+    {
+      "requirement_id": "REQ-022",
+      "matched": false,
+      "evidence": [],
+      "confidence": "low",
+      "notes": "Not found in the resume"
+    },
+    {
+      "requirement_id": "REQ-023",
+      "matched": false,
+      "evidence": [],
+      "confidence": "low",
+      "notes": "Not found in the resume"
+    },
+    {
+      "requirement_id": "REQ-024",
+      "matched": false,
+      "evidence": [],
+      "confidence": "low",
+      "notes": "Not found in the resume"
+    },
+    {
+      "requirement_id": "REQ-025",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Lead Software Engineer",
+          "resume_section": "Selected Projects & Experience",
+          "start_offset": null,
+          "end_offset": null
+        }
+      ],
+      "confidence": "high",
+      "notes": "Found in Selected Projects & Experience section"
+    },
+    {
+      "requirement_id": "REQ-026",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Mentored early-career developers",
+          "resume_section": "Professional Experience",
+          "start_offset": null,
+          "end_offset": null
+        }
+      ],
+      "confidence": "high",
+      "notes": "Found in Professional Experience section under i.c.stars"
+    }
+  ]
+}

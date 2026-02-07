@@ -1,0 +1,267 @@
+{
+  "role_id": "role_784a9663fc2a",
+  "jd_hash": "784a9663fc2a35c204df3eaa0e8a2b5d912e482451178b36738b47f90f62ad04",
+  "requirements_version": "1.0.0",
+  "created_at": "2026-02-07T02:16:17.120Z",
+  "role_title": "AI Staff Software Engineer (Patient)",
+  "requirements": [
+    {
+      "id": "REQ-001",
+      "category": "Technical",
+      "name": "Python 3",
+      "description": "Languages: Python 3, TypeScript",
+      "must_have": true,
+      "weight": 5,
+      "aliases": [
+        "Python",
+        "Python3"
+      ]
+    },
+    {
+      "id": "REQ-002",
+      "category": "Technical",
+      "name": "TypeScript",
+      "description": "Languages: Python 3, TypeScript",
+      "must_have": true,
+      "weight": 5,
+      "aliases": [
+        "Type Script",
+        "TS"
+      ]
+    },
+    {
+      "id": "REQ-003",
+      "category": "Technical",
+      "name": "FastAPI",
+      "description": "Libraries & Frameworks: FastAPI, React, Remix, Next.js, React Aria",
+      "must_have": true,
+      "weight": 5,
+      "aliases": [
+        "Fast API"
+      ]
+    },
+    {
+      "id": "REQ-004",
+      "category": "Technical",
+      "name": "React",
+      "description": "Libraries & Frameworks: FastAPI, React, Remix, Next.js, React Aria",
+      "must_have": true,
+      "weight": 5,
+      "aliases": [
+        "ReactJS"
+      ]
+    },
+    {
+      "id": "REQ-005",
+      "category": "Technical",
+      "name": "Remix",
+      "description": "Libraries & Frameworks: FastAPI, React, Remix, Next.js, React Aria",
+      "must_have": true,
+      "weight": 5,
+      "aliases": []
+    },
+    {
+      "id": "REQ-006",
+      "category": "Technical",
+      "name": "Next.js",
+      "description": "Libraries & Frameworks: FastAPI, React, Remix, Next.js, React Aria",
+      "must_have": true,
+      "weight": 5,
+      "aliases": [
+        "NextJS"
+      ]
+    },
+    {
+      "id": "REQ-007",
+      "category": "Technical",
+      "name": "React Aria",
+      "description": "Libraries & Frameworks: FastAPI, React, Remix, Next.js, React Aria",
+      "must_have": true,
+      "weight": 5,
+      "aliases": []
+    },
+    {
+      "id": "REQ-008",
+      "category": "Infrastructure",
+      "name": "AWS",
+      "description": "Infrastructure: AWS (Fargate, ECS, S3, and more)",
+      "must_have": true,
+      "weight": 5,
+      "aliases": [
+        "Amazon Web Services"
+      ]
+    },
+    {
+      "id": "REQ-009",
+      "category": "Infrastructure",
+      "name": "Fargate",
+      "description": "Infrastructure: AWS (Fargate, ECS, S3, and more)",
+      "must_have": true,
+      "weight": 5,
+      "aliases": []
+    },
+    {
+      "id": "REQ-010",
+      "category": "Infrastructure",
+      "name": "ECS",
+      "description": "Infrastructure: AWS (Fargate, ECS, S3, and more)",
+      "must_have": true,
+      "weight": 5,
+      "aliases": [
+        "EC2 Container Service"
+      ]
+    },
+    {
+      "id": "REQ-011",
+      "category": "Infrastructure",
+      "name": "S3",
+      "description": "Infrastructure: AWS (Fargate, ECS, S3, and more)",
+      "must_have": true,
+      "weight": 5,
+      "aliases": [
+        "Simple Storage Service"
+      ]
+    },
+    {
+      "id": "REQ-012",
+      "category": "Technical",
+      "name": "Spark",
+      "description": "Infrastructure: AWS (Fargate, ECS, S3, and more), Spark and Kafka",
+      "must_have": true,
+      "weight": 5,
+      "aliases": [
+        "Apache Spark"
+      ]
+    },
+    {
+      "id": "REQ-013",
+      "category": "Technical",
+      "name": "Kafka",
+      "description": "Infrastructure: AWS (Fargate, ECS, S3, and more), Spark and Kafka",
+      "must_have": true,
+      "weight": 5,
+      "aliases": [
+        "Apache Kafka"
+      ]
+    },
+    {
+      "id": "REQ-014",
+      "category": "Technical",
+      "name": "Datadog",
+      "description": "Monitoring: Datadog, PagerDuty, Sentry",
+      "must_have": true,
+      "weight": 5,
+      "aliases": []
+    },
+    {
+      "id": "REQ-015",
+      "category": "Technical",
+      "name": "PagerDuty",
+      "description": "Monitoring: Datadog, PagerDuty, Sentry",
+      "must_have": true,
+      "weight": 5,
+      "aliases": []
+    },
+    {
+      "id": "REQ-016",
+      "category": "Technical",
+      "name": "Sentry",
+      "description": "Monitoring: Datadog, PagerDuty, Sentry",
+      "must_have": true,
+      "weight": 5,
+      "aliases": []
+    },
+    {
+      "id": "REQ-017",
+      "category": "Technical",
+      "name": "Github",
+      "description": "Version Control: Github, PagerDuty",
+      "must_have": true,
+      "weight": 5,
+      "aliases": []
+    },
+    {
+      "id": "REQ-018",
+      "category": "AI",
+      "name": "LLMs",
+      "description": "real world experience building AI powered features using LLMs or applied machine learning",
+      "must_have": true,
+      "weight": 5,
+      "aliases": [
+        "Large Language Models"
+      ]
+    },
+    {
+      "id": "REQ-019",
+      "category": "AI",
+      "name": "Applied Machine Learning",
+      "description": "real world experience building AI powered features using LLMs or applied machine learning",
+      "must_have": true,
+      "weight": 5,
+      "aliases": []
+    },
+    {
+      "id": "REQ-020",
+      "category": "Domain",
+      "name": "Mental Health",
+      "description": "building a new mental healthcare system",
+      "must_have": true,
+      "weight": 5,
+      "aliases": []
+    },
+    {
+      "id": "REQ-021",
+      "category": "Collaboration",
+      "name": "Partnership with Product Managers",
+      "description": "partnering with product managers, designers, clinicians, and legal or compliance partners",
+      "must_have": true,
+      "weight": 5,
+      "aliases": []
+    },
+    {
+      "id": "REQ-022",
+      "category": "Collaboration",
+      "name": "Partnership with Designers",
+      "description": "partnering with product managers, designers, clinicians, and legal or compliance partners",
+      "must_have": true,
+      "weight": 5,
+      "aliases": []
+    },
+    {
+      "id": "REQ-023",
+      "category": "Collaboration",
+      "name": "Partnership with Clinicians",
+      "description": "partnering with product managers, designers, clinicians, and legal or compliance partners",
+      "must_have": true,
+      "weight": 5,
+      "aliases": []
+    },
+    {
+      "id": "REQ-024",
+      "category": "Collaboration",
+      "name": "Partnership with Legal or Compliance Partners",
+      "description": "partnering with product managers, designers, clinicians, and legal or compliance partners",
+      "must_have": true,
+      "weight": 5,
+      "aliases": []
+    },
+    {
+      "id": "REQ-025",
+      "category": "Behavioral",
+      "name": "Technical Leadership",
+      "description": "hands on technical leadership role",
+      "must_have": true,
+      "weight": 5,
+      "aliases": []
+    },
+    {
+      "id": "REQ-026",
+      "category": "Behavioral",
+      "name": "Mentorship",
+      "description": "regularly mentor senior engineers and technical leaders",
+      "must_have": true,
+      "weight": 5,
+      "aliases": []
+    }
+  ]
+}

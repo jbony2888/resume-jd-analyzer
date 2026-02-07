@@ -1,0 +1,213 @@
+{
+  "role_id": "role_5247184dee61",
+  "jd_hash": "5247184dee613757f4e27b6f0ea4d2016c5862f2d14d7574d7918f63b662d85d",
+  "requirements_version": "2.0.0",
+  "created_at": "2026-02-07T19:39:37.802Z",
+  "role_title": "AI Staff Software Engineer (Patient)",
+  "requirements": [
+    {
+      "id": "REQ-a8b1d0bc8a",
+      "requirement_key": "ai_engineering",
+      "category": "AI",
+      "name": "AI Engineering",
+      "description": "Design, build, and operate AI powered systems",
+      "must_have": true,
+      "weight": 5,
+      "aliases": [
+        "Machine Learning Engineering"
+      ]
+    },
+    {
+      "id": "REQ-3b7ecb97f6",
+      "requirement_key": "applied_machine_learning",
+      "category": "AI",
+      "name": "Applied Machine Learning",
+      "description": "Real world experience building AI powered features using LLMs or applied machine learning",
+      "must_have": true,
+      "weight": 5,
+      "aliases": []
+    },
+    {
+      "id": "REQ-9f96b6d1ad",
+      "requirement_key": "evaluation_strategies",
+      "category": "AI",
+      "name": "Evaluation Strategies for AI Systems",
+      "description": "Designed evaluation strategies for AI systems and understand the limits of automated metrics",
+      "must_have": true,
+      "weight": 5,
+      "aliases": []
+    },
+    {
+      "id": "REQ-fcfc4718e3",
+      "requirement_key": "llm",
+      "category": "AI",
+      "name": "LLM (Large Language Model)",
+      "description": "Real world experience building AI powered features using LLMs or applied machine learning",
+      "must_have": true,
+      "weight": 5,
+      "aliases": [
+        "Large Language Models"
+      ]
+    },
+    {
+      "id": "REQ-9af878aa85",
+      "requirement_key": "aws",
+      "category": "Infrastructure",
+      "name": "AWS",
+      "description": "Infrastructure: AWS (Fargate, ECS, S3, and more)",
+      "must_have": true,
+      "weight": 5,
+      "aliases": [
+        "Amazon Web Services"
+      ]
+    },
+    {
+      "id": "REQ-d587f67428",
+      "requirement_key": "spark",
+      "category": "Infrastructure",
+      "name": "Spark",
+      "description": "Infrastructure: Spark and Kafka",
+      "must_have": true,
+      "weight": 5,
+      "aliases": [
+        "Apache Spark",
+        "Apache Kafka"
+      ]
+    },
+    {
+      "id": "REQ-2f1a867fb9",
+      "requirement_key": "datadog",
+      "category": "Technical",
+      "name": "Datadog",
+      "description": "Monitoring: Datadog",
+      "must_have": true,
+      "weight": 5,
+      "aliases": []
+    },
+    {
+      "id": "REQ-a15cfe2741",
+      "requirement_key": "fast_api",
+      "category": "Technical",
+      "name": "FastAPI",
+      "description": "Libraries & Frameworks: FastAPI",
+      "must_have": true,
+      "weight": 5,
+      "aliases": []
+    },
+    {
+      "id": "REQ-11e8869b0d",
+      "requirement_key": "github",
+      "category": "Technical",
+      "name": "Github",
+      "description": "Version Control: Github",
+      "must_have": true,
+      "weight": 5,
+      "aliases": []
+    },
+    {
+      "id": "REQ-5633c3d3bf",
+      "requirement_key": "next_js",
+      "category": "Technical",
+      "name": "Next.js",
+      "description": "Libraries & Frameworks: Next.js",
+      "must_have": true,
+      "weight": 5,
+      "aliases": []
+    },
+    {
+      "id": "REQ-2242f1f3e0",
+      "requirement_key": "pager_duty",
+      "category": "Technical",
+      "name": "PagerDuty",
+      "description": "Monitoring: PagerDuty, Sentry",
+      "must_have": true,
+      "weight": 5,
+      "aliases": []
+    },
+    {
+      "id": "REQ-10a3707f08",
+      "requirement_key": "python_3",
+      "category": "Technical",
+      "name": "Python 3",
+      "description": "Languages: Python 3",
+      "must_have": true,
+      "weight": 5,
+      "aliases": [
+        "Python",
+        "Python3"
+      ]
+    },
+    {
+      "id": "REQ-7b810317c7",
+      "requirement_key": "react",
+      "category": "Technical",
+      "name": "React",
+      "description": "Libraries & Frameworks: React",
+      "must_have": true,
+      "weight": 5,
+      "aliases": []
+    },
+    {
+      "id": "REQ-9bf4effb4d",
+      "requirement_key": "react_aria",
+      "category": "Technical",
+      "name": "React Aria",
+      "description": "Libraries & Frameworks: React Aria",
+      "must_have": true,
+      "weight": 5,
+      "aliases": []
+    },
+    {
+      "id": "REQ-ae44088f60",
+      "requirement_key": "reliability",
+      "category": "Technical",
+      "name": "Reliability",
+      "description": "Care deeply about reliability, privacy, and safety when deploying AI systems",
+      "must_have": true,
+      "weight": 5,
+      "aliases": []
+    },
+    {
+      "id": "REQ-5b9d71acb6",
+      "requirement_key": "remix",
+      "category": "Technical",
+      "name": "Remix",
+      "description": "Libraries & Frameworks: Remix",
+      "must_have": true,
+      "weight": 5,
+      "aliases": []
+    },
+    {
+      "id": "REQ-1e41d695b9",
+      "requirement_key": "type_script",
+      "category": "Technical",
+      "name": "TypeScript",
+      "description": "Languages: TypeScript",
+      "must_have": true,
+      "weight": 5,
+      "aliases": [
+        "TS"
+      ]
+    },
+    {
+      "id": "REQ-d1427a4901",
+      "requirement_key": "collaboration",
+      "category": "Collaboration",
+      "name": "Collaboration",
+      "description": "Partner closely with product, clinical, and data leaders",
+      "must_have": true,
+      "weight": 5,
+      "aliases": []
+    },
+    {
+      "id": "REQ-54e747cdb3",
+      "requirement_key": "technical_leadership",
+      "category": "Behavioral",
+      "name": "Technical Leadership",
+      "description": "Hands on technical leadership role",
+      "must_have": true,
+      "weight": 5,
+      "aliases": []
+    }
+  ]
+}

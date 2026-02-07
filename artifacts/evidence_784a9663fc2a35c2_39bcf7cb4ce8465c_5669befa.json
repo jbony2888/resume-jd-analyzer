@@ -1,0 +1,256 @@
+{
+  "role_id": "role_784a9663fc2a",
+  "jd_hash": "784a9663fc2a35c204df3eaa0e8a2b5d912e482451178b36738b47f90f62ad04",
+  "resume_hash": "39bcf7cb4ce8465c1473aac72e2f7e508204ab72f291aadb972965098280b8e0",
+  "requirements_version": "1.0.0",
+  "prompt_version": "MATCH_EVIDENCE_V2",
+  "model_id": "llama-3.3-70b-versatile",
+  "run_id": "5669befa",
+  "matches": [
+    {
+      "requirement_id": "REQ-001",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Python",
+          "resume_section": "Core Skills",
+          "start_offset": null,
+          "end_offset": null
+        }
+      ],
+      "notes": "Found 'Python' in Core Skills section"
+    },
+    {
+      "requirement_id": "REQ-002",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "TypeScript",
+          "resume_section": "Core Skills",
+          "start_offset": null,
+          "end_offset": null
+        }
+      ],
+      "notes": "Found 'TypeScript' in Core Skills section"
+    },
+    {
+      "requirement_id": "REQ-003",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "FastAPI",
+          "resume_section": "Frameworks & Platforms",
+          "start_offset": null,
+          "end_offset": null
+        }
+      ],
+      "notes": "Found 'FastAPI' in Frameworks & Platforms section"
+    },
+    {
+      "requirement_id": "REQ-004",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "React",
+          "resume_section": "Frameworks & Platforms",
+          "start_offset": null,
+          "end_offset": null
+        }
+      ],
+      "notes": "Found 'React' in Frameworks & Platforms section"
+    },
+    {
+      "requirement_id": "REQ-005",
+      "requirement_key": "",
+      "matched": false,
+      "evidence": [],
+      "notes": "No evidence found"
+    },
+    {
+      "requirement_id": "REQ-006",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Next.js",
+          "resume_section": "Frameworks & Platforms",
+          "start_offset": null,
+          "end_offset": null
+        }
+      ],
+      "notes": "Found 'Next.js' in Frameworks & Platforms section"
+    },
+    {
+      "requirement_id": "REQ-007",
+      "requirement_key": "",
+      "matched": false,
+      "evidence": [],
+      "notes": "No evidence found"
+    },
+    {
+      "requirement_id": "REQ-008",
+      "requirement_key": "",
+      "matched": false,
+      "evidence": [],
+      "notes": "No evidence found"
+    },
+    {
+      "requirement_id": "REQ-009",
+      "requirement_key": "",
+      "matched": false,
+      "evidence": [],
+      "notes": "No evidence found"
+    },
+    {
+      "requirement_id": "REQ-010",
+      "requirement_key": "",
+      "matched": false,
+      "evidence": [],
+      "notes": "No evidence found"
+    },
+    {
+      "requirement_id": "REQ-011",
+      "requirement_key": "",
+      "matched": false,
+      "evidence": [],
+      "notes": "No evidence found"
+    },
+    {
+      "requirement_id": "REQ-012",
+      "requirement_key": "",
+      "matched": false,
+      "evidence": [],
+      "notes": "No evidence found"
+    },
+    {
+      "requirement_id": "REQ-013",
+      "requirement_key": "",
+      "matched": false,
+      "evidence": [],
+      "notes": "No evidence found"
+    },
+    {
+      "requirement_id": "REQ-014",
+      "requirement_key": "",
+      "matched": false,
+      "evidence": [],
+      "notes": "No evidence found"
+    },
+    {
+      "requirement_id": "REQ-015",
+      "requirement_key": "",
+      "matched": false,
+      "evidence": [],
+      "notes": "No evidence found"
+    },
+    {
+      "requirement_id": "REQ-016",
+      "requirement_key": "",
+      "matched": false,
+      "evidence": [],
+      "notes": "No evidence found"
+    },
+    {
+      "requirement_id": "REQ-017",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "GitHub",
+          "resume_section": "Contact Information",
+          "start_offset": null,
+          "end_offset": null
+        }
+      ],
+      "notes": "Found 'GitHub' in Contact Information section"
+    },
+    {
+      "requirement_id": "REQ-018",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "LLM-assisted",
+          "resume_section": "Summary",
+          "start_offset": null,
+          "end_offset": null
+        }
+      ],
+      "notes": "Found 'LLM-assisted' in Summary section"
+    },
+    {
+      "requirement_id": "REQ-019",
+      "requirement_key": "",
+      "matched": false,
+      "evidence": [],
+      "notes": "No evidence found"
+    },
+    {
+      "requirement_id": "REQ-020",
+      "requirement_key": "",
+      "matched": false,
+      "evidence": [],
+      "notes": "No evidence found"
+    },
+    {
+      "requirement_id": "REQ-021",
+      "requirement_key": "",
+      "matched": false,
+      "evidence": [],
+      "notes": "No evidence found"
+    },
+    {
+      "requirement_id": "REQ-022",
+      "requirement_key": "",
+      "matched": false,
+      "evidence": [],
+      "notes": "No evidence found"
+    },
+    {
+      "requirement_id": "REQ-023",
+      "requirement_key": "",
+      "matched": false,
+      "evidence": [],
+      "notes": "No evidence found"
+    },
+    {
+      "requirement_id": "REQ-024",
+      "requirement_key": "",
+      "matched": false,
+      "evidence": [],
+      "notes": "No evidence found"
+    },
+    {
+      "requirement_id": "REQ-025",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Technical Consultant",
+          "resume_section": "Summary",
+          "start_offset": null,
+          "end_offset": null
+        }
+      ],
+      "notes": "Found 'Technical Consultant' in Summary section"
+    },
+    {
+      "requirement_id": "REQ-026",
+      "requirement_key": "",
+      "matched": true,
+      "evidence": [
+        {
+          "quote": "Mentored early-career developers",
+          "resume_section": "Professional Experience",
+          "start_offset": null,
+          "end_offset": null
+        }
+      ],
+      "notes": "Found 'Mentored early-career developers' in Professional Experience section"
+    }
+  ]
+}

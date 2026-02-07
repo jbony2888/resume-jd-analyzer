@@ -1,0 +1,137 @@
+{
+  "role_id": "role_4304e27678a4",
+  "jd_hash": "4304e27678a4a967ed8104dded3303261dbcc288f1f861cd95ea88864f044157",
+  "requirements_version": "2.0.0",
+  "created_at": "2026-02-07T19:48:53.786Z",
+  "role_title": "AI Staff Software Engineer (Patient)",
+  "requirements": [
+    {
+      "id": "REQ-fcfc4718e3",
+      "requirement_key": "llm",
+      "category": "AI",
+      "name": "Applied Machine Learning",
+      "description": "You have real world experience building AI powered features using LLMs or applied machine learning",
+      "must_have": true,
+      "weight": 5,
+      "aliases": [
+        "Large Language Model",
+        "AML"
+      ]
+    },
+    {
+      "id": "REQ-9af878aa85",
+      "requirement_key": "aws",
+      "category": "Infrastructure",
+      "name": "Fargate",
+      "description": "Infrastructure: AWS (Fargate, ECS, S3, and more)",
+      "must_have": true,
+      "weight": 5,
+      "aliases": [
+        "Amazon Web Services",
+        "AWS Fargate",
+        "Amazon ECS",
+        "Amazon S3"
+      ]
+    },
+    {
+      "id": "REQ-d587f67428",
+      "requirement_key": "spark",
+      "category": "Infrastructure",
+      "name": "Spark",
+      "description": "Infrastructure: AWS (Fargate, ECS, S3, and more), Spark and Kafka",
+      "must_have": true,
+      "weight": 5,
+      "aliases": [
+        "Apache Spark",
+        "Apache Kafka"
+      ]
+    },
+    {
+      "id": "REQ-2f1a867fb9",
+      "requirement_key": "datadog",
+      "category": "Technical",
+      "name": "PagerDuty",
+      "description": "Monitoring: Datadog, PagerDuty, Sentry",
+      "must_have": true,
+      "weight": 5,
+      "aliases": [
+        "PD"
+      ]
+    },
+    {
+      "id": "REQ-a15cfe2741",
+      "requirement_key": "fast_api",
+      "category": "Technical",
+      "name": "React Aria",
+      "description": "Libraries & Frameworks: FastAPI, React, Remix, Next.js, React Aria",
+      "must_have": true,
+      "weight": 5,
+      "aliases": [
+        "Fast API",
+        "React JS",
+        "Next JS",
+        "React-Aria"
+      ]
+    },
+    {
+      "id": "REQ-11e8869b0d",
+      "requirement_key": "github",
+      "category": "Technical",
+      "name": "Github",
+      "description": "Version Control: Github, PagerDuty",
+      "must_have": true,
+      "weight": 5,
+      "aliases": []
+    },
+    {
+      "id": "REQ-10a3707f08",
+      "requirement_key": "python_3",
+      "category": "Technical",
+      "name": "Python 3",
+      "description": "Languages: Python 3",
+      "must_have": true,
+      "weight": 5,
+      "aliases": [
+        "Python 3",
+        "Python3"
+      ]
+    },
+    {
+      "id": "REQ-1e41d695b9",
+      "requirement_key": "type_script",
+      "category": "Technical",
+      "name": "TypeScript",
+      "description": "Languages: Python 3, TypeScript",
+      "must_have": true,
+      "weight": 5,
+      "aliases": [
+        "Type Script",
+        "TS"
+      ]
+    },
+    {
+      "id": "REQ-d1427a4901",
+      "requirement_key": "collaboration",
+      "category": "Collaboration",
+      "name": "Collaboration",
+      "description": "You are comfortable partnering with product managers, designers, clinicians, and legal or compliance partners to translate complex domain needs into responsible AI systems",
+      "must_have": true,
+      "weight": 5,
+      "aliases": [
+        "Teamwork"
+      ]
+    },
+    {
+      "id": "REQ-54e747cdb3",
+      "requirement_key": "technical_leadership",
+      "category": "Behavioral",
+      "name": "Technical Leadership",
+      "description": "This is a hands on technical leadership role",
+      "must_have": true,
+      "weight": 5,
+      "aliases": [
+        "Tech Lead"
+      ]
+    }
+  ]
+}

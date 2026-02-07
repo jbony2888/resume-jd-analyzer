@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "JobRequirements",
+  "description": "Canonical job requirements extracted from a JD, frozen for deterministic evaluation",
+  "type": "object",
+  "required": ["role_id", "jd_hash", "requirements_version", "created_at", "requirements"],
+  "properties": {
+    "role_id": { "type": "string" },
+    "jd_hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "requirements_version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "requirements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "category", "name", "description", "must_have", "weight"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^(REQ-[a-f0-9]{10}|REQ-[0-9]{3})$" },
+          "requirement_key": { "type": "string" },
+          "category": { "type": "string", "enum": ["Technical", "Systems", "AI", "Domain", "Collaboration", "Behavioral", "Infrastructure"] },
+          "name": { "type": "string" },
+          "description": { "type": "string" },
+          "must_have": { "type": "boolean" },
+          "weight": { "type": "integer", "minimum": 1, "maximum": 5 },
+          "aliases": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}

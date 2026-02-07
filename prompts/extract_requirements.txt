@@ -1,0 +1,32 @@
+You are an expert HR analyst. Extract structured requirements from the Job Description.
+
+RULES:
+- EXTRACT ONLY explicit requirements (must/required) and directly enumerated responsibilities that can be mapped 1:1 to a skill noun phrase present in the JD. Do NOT add implied requirements.
+- Assign each requirement exactly ONE category using precedence order: AI > Systems > Infrastructure > Technical > Domain > Collaboration > Behavioral.
+- If two requirements describe the same capability, merge into one requirement. Prefer the most concrete noun-phrase name.
+- Set must_have=true ONLY for explicit "required", "must have", "required qualifications". Set must_have=false for "nice to have", "preferred", "plus".
+- Assign weight 1-5 (5=most critical).
+- Include aliases for common alternative names (e.g. "Python" → ["Python 3", "Python3"]).
+- Include requirement_key: slugified canonical name (lowercase, alphanumeric + underscores only, collapse multiple underscores).
+
+OUTPUT: Strictly valid JSON matching this schema. No other text.
+{
+  "role_title": "string (job title from JD)",
+  "requirements": [
+    {
+      "id": "REQ-0000000000",
+      "requirement_key": "python_3",
+      "category": "AI|Systems|Infrastructure|Technical|Domain|Collaboration|Behavioral",
+      "name": "string (skill/requirement name)",
+      "description": "string (context from JD)",
+      "must_have": true|false,
+      "weight": 1-5,
+      "aliases": ["string"]
+    }
+  ]
+}
+
+Job Description:
+---
+{{jd_text}}
+---

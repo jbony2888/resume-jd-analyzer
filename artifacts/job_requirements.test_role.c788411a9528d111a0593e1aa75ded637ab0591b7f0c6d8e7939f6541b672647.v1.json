@@ -1,0 +1,126 @@
+{
+  "role_id": "test_role",
+  "jd_hash": "c788411a9528d111a0593e1aa75ded637ab0591b7f0c6d8e7939f6541b672647",
+  "requirements_version": "1.0.0",
+  "created_at": "2026-02-07T01:14:53.056Z",
+  "role_title": "Senior Python Developer",
+  "requirements": [
+    {
+      "id": "REQ-001",
+      "category": "Technical",
+      "name": "Python 3.x",
+      "description": "Strong proficiency in Python 3.x",
+      "must_have": true,
+      "weight": 5,
+      "aliases": [
+        "Python",
+        "Python3"
+      ]
+    },
+    {
+      "id": "REQ-002",
+      "category": "Technical",
+      "name": "FastAPI or Django",
+      "description": "Experience with FastAPI or Django",
+      "must_have": true,
+      "weight": 4,
+      "aliases": []
+    },
+    {
+      "id": "REQ-003",
+      "category": "Technical",
+      "name": "PostgreSQL",
+      "description": "Knowledge of PostgreSQL",
+      "must_have": true,
+      "weight": 4,
+      "aliases": [
+        "Postgres"
+      ]
+    },
+    {
+      "id": "REQ-004",
+      "category": "Technical",
+      "name": "Redis",
+      "description": "Knowledge of Redis",
+      "must_have": true,
+      "weight": 3,
+      "aliases": []
+    },
+    {
+      "id": "REQ-005",
+      "category": "Technical",
+      "name": "Docker",
+      "description": "Experience with Docker",
+      "must_have": true,
+      "weight": 4,
+      "aliases": []
+    },
+    {
+      "id": "REQ-006",
+      "category": "Technical",
+      "name": "Kubernetes",
+      "description": "Experience with Kubernetes",
+      "must_have": true,
+      "weight": 4,
+      "aliases": [
+        "K8s"
+      ]
+    },
+    {
+      "id": "REQ-007",
+      "category": "Technical",
+      "name": "CI/CD pipelines (GitHub Actions)",
+      "description": "Familiarity with CI/CD pipelines (GitHub Actions)",
+      "must_have": true,
+      "weight": 3,
+      "aliases": []
+    },
+    {
+      "id": "REQ-008",
+      "category": "Infrastructure",
+      "name": "Cloud experience (AWS or GCP)",
+      "description": "Cloud experience (AWS or GCP)",
+      "must_have": true,
+      "weight": 4,
+      "aliases": [
+        "Cloud Computing"
+      ]
+    },
+    {
+      "id": "REQ-009",
+      "category": "Collaboration",
+      "name": "Communication and teamwork skills",
+      "description": "Strong communication and teamwork skills",
+      "must_have": true,
+      "weight": 5,
+      "aliases": []
+    },
+    {
+      "id": "REQ-010",
+      "category": "Technical",
+      "name": "LLM APIs (OpenAI, Groq)",
+      "description": "Experience with LLM APIs (OpenAI, Groq)",
+      "must_have": false,
+      "weight": 2,
+      "aliases": []
+    },
+    {
+      "id": "REQ-011",
+      "category": "Technical",
+      "name": "Terraform or Pulumi",
+      "description": "Knowledge of Terraform or Pulumi",
+      "must_have": false,
+      "weight": 2,
+      "aliases": []
+    },
+    {
+      "id": "REQ-012",
+      "category": "Domain",
+      "name": "Open source projects",
+      "description": "Contribution to open source projects",
+      "must_have": false,
+      "weight": 1,
+      "aliases": []
+    }
+  ]
+}
